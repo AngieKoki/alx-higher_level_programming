@@ -3,5 +3,5 @@
 # Adding all unique integers 
 
 def uniq_add(my_list=[]):
-    a = set('my_list')
-    return(sum(b))
+    a = set(my_list)
+    return(sum(a))

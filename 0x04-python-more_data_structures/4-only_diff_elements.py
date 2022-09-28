@@ -1,4 +1,4 @@
-#!/user/bin/python3
+#!/usr/bin/python3
 
 # Returns a set of all elements present in only one set
 

@@ -2,10 +2,10 @@
 """Defines a rectangle"""
 
 class Rectangle:
-    """__init__ method intializes the values passed to the object.
+    """The __init__ method initialize the values passed to the object.
     Attributes:
-    width: private attribute
-    height: private attribute
+        width: private attribute
+        height: private attribute
     """
 
     def __init__(self, width=0, height=0):
@@ -27,12 +27,12 @@ class Rectangle:
 
     @property
     def height(self):
-        """Height of property"""
+        """Height property"""
         return self.__height
 
     @height.setter
     def height(self, value):
-        if not isinstance(value int):
+        if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")

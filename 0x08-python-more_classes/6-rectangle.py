@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This function define a rectangle"""
+"""This function defines a rectangle"""
 
 
 class Rectangle:
@@ -9,9 +9,12 @@ class Rectangle:
         height: is a private attribute.
     """
 
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
+        type(self).number_of_instances += 1
 
     @property
     def width(self):
@@ -61,6 +64,6 @@ class Rectangle:
     def __repr__(self):
         return ("Rectangle(" + str(self.width) + ", " + str(self.height) + ")")
 
-   def __del__(self):
+    def __del__(self):
         print("Bye rectangle...")
         type(self).number_of_instances -= 1

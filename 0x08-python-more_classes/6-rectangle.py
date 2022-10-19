@@ -61,6 +61,6 @@ class Rectangle:
     def __repr__(self):
         return ("Rectangle(" + str(self.width) + ", " + str(self.height) + ")")
 
-    def __del__(self):
+   def __del__(self):
         print("Bye rectangle...")
         type(self).number_of_instances -= 1

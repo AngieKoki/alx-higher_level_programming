@@ -1,15 +1,13 @@
 #!/usr/bin/python3
-"""Defines a rectangle"""
-
+"""This function defines a rectangle"""
 
 
 class Rectangle:
     """The __init__ method initialize the values passed to the object.
     Attributes:
-        width: private attribute
-        height: private attribute
+        width: is a private attribute.
+        height: is a private attribute.
     """
-
 
     def __init__(self, width=0, height=0):
         self.width = width

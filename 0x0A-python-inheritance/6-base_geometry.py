@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-"""Module BaseGeometry
+"""Module base_geometry
 Creates a class
 """
+
 
 class BaseGeometry:
     """Class with public instance method"""
